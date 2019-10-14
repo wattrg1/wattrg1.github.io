@@ -10,7 +10,10 @@ xhttp.onreadystatechange = function() {
         //a0 = obj1.a0;
        // console.log(obj1[0].title);
        for (item of obj1) {
-       	console.log(item.title);
+       	//console.log(item.title);
+
+document.getElementById("mytable").innerHTML = "<table><tr><td>"+item.table+"</td></td></tr></table><hr>";
+
      }
     }
 };
@@ -21,3 +24,4 @@ xhttp.send();
     
 
 </script>
+<div id="mytable"></div>
