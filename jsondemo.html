@@ -6,7 +6,7 @@ xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        var jsontext=this.responseText;
       // console.log("we got "+jsontext);
-        var obj1 = JSON.parse(obj);
+        var obj1 = JSON.parse(jsontext);
         //a0 = obj1.a0;
        // console.log(obj1[0].title);
        for (item of obj1) {
