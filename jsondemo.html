@@ -11,11 +11,12 @@ xhttp.onreadystatechange = function() {
        // console.log(obj1[0].title);
        for (item of obj1) {
        	//console.log(item.title);
-
+if(item.title=="Ravioli"){
 document.getElementById("mytable").innerHTML+="<table><tr><td>"+item.title+"</td></td></tr>";
 document.getElementById("mytable").innerHTML+="<tr><td>"+item.summary+"</td></td></tr>";
+document.getElementById("mytable").innerHTML+="<tr><td><img src='"+item.image+"' width='50px'/></td></td></tr>";
 document.getElementById("mytable").innerHTML+="</table><hr>";
-
+}
      }
     }
 };
