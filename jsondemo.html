@@ -12,7 +12,9 @@ xhttp.onreadystatechange = function() {
        for (item of obj1) {
        	//console.log(item.title);
 
-document.getElementById("mytable").innerHTML+="<table><tr><td>"+item.title+"</td></td></tr></table><hr>";
+document.getElementById("mytable").innerHTML+="<table><tr><td>"+item.title+"</td></td></tr>";
+document.getElementById("mytable").innerHTML+="<tr><td>"+item.summary+"</td></td></tr>";
+document.getElementById("mytable").innerHTML+="</table><hr>";
 
      }
     }
