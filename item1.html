@@ -12,7 +12,7 @@
     		if (this.readyState == 4 && this.status == 200) {
        			var jsontext = this.responseText;
         		var obj1 = JSON.parse(jsontext);
-        			document.getElementById("mytable").innerHTML+="<table><thead><tr><th>Product</th><th>Description</th><th></th></tr></thead><tbody>";
+        			document.getElementById("mytable").innerHTML+="<table><thead><tr><th>Product</th><th>Description</th><th>Image</th><th>Price</th></tr></thead><tbody>";
 				
        			for (var i = 0; i < 5; i++) {
 					document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].title+"</td></td></tr>";
