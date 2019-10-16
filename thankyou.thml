@@ -25,5 +25,5 @@
         }
     
         </script>
-Thankyou
+<div id="thanks">Thank you for your message <span id="name"></span></div></div>
 </html>
