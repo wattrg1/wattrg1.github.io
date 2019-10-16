@@ -5,16 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     
 	 <link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
-	</head>
-<body>
-	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="item1.html">Pasta</a></li>
-		<li><a href="item2.html">Herbs</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-</body>
-<script type="text/javascript">
+	 <script type="text/javascript">
 	window.onload = function () { 
     	var xhttp = new XMLHttpRequest();
 		xhttp.onreadystatechange = function() {
@@ -30,7 +21,7 @@
 				document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].price+"</td></tr>";
 					document.getElementById("mytable").innerHTML+="<tr><td colspan='4'><hr></td></tr>";
      			}
-     				document.getElementById("mytable").innerHTML+="</table>";
+     				document.getElementById("mytable").innerHTML+="</tbody></table>";
 				
    			}
 		};
@@ -38,5 +29,15 @@
 		xhttp.send();
     }   
 </script>
-<div id="mytable"></div>
+	</head>
+<body>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="item1.html">Pasta</a></li>
+		<li><a href="item2.html">Herbs</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+<br/>
+
+<div id="mytable"></div></body>
 </html>
