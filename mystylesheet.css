@@ -15,8 +15,8 @@ ul {
 
 li {
   display: inline-block;
-  margin-right: 1px;
-  width: 20%;
+  /*margin-right: 1px;*/
+  width: 25%;
   float: none;
 }
 
