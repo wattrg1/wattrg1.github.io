@@ -21,12 +21,17 @@
     		if (this.readyState == 4 && this.status == 200) {
        			var jsontext = this.responseText;
         		var obj1 = JSON.parse(jsontext);
+        			document.getElementById("mytable").innerHTML+="<table><thead><tr><th>Product</th><th>Description</th><th></th></tr></thead><tbody>";
+				
        			for (var i = 0; i < 5; i++) {
-					document.getElementById("mytable").innerHTML+="<table><tr><td>"+obj1[i].title+"</td></td></tr>";
+					document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].title+"</td></td></tr>";
 					document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].summary+"</td></td></tr>";
-					document.getElementById("mytable").innerHTML+="<tr><td><img src='"+obj1[i].image+"' width='50px'/></td></td></tr>";
-					document.getElementById("mytable").innerHTML+="</table><hr>";
+					document.getElementById("mytable").innerHTML+="<tr><td><img src='"+obj1[i].image+"' width='50px'/></td></tr>";
+				document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].price+"</td></tr>";
+					document.getElementById("mytable").innerHTML+="<tr><td colspan="4"><hr></td></tr>";
      			}
+     				document.getElementById("mytable").innerHTML+="</table>";
+				
    			}
 		};
 		xhttp.open("GET", "items.json", true);
