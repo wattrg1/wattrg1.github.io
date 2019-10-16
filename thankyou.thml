@@ -1,0 +1,29 @@
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
+	</head>
+<body>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="item1.html">Pasta</a></li>
+		<li><a href="item2.html">Herbs</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</body>
+
+<script src="myjs.js"></script>
+    <script type="text/javascript">
+        window.onload = function () { 
+            
+             var str = window.location.search.substr(1);
+        console.log(str);
+            str = str.substr(str.indexOf("name=")+5);
+            str = str.substr(0,str.indexOf("&"));
+            
+        document.getElementById("name").innerHTML=str;
+        
+        }
+    
+        </script>
+Thankyou
+</html>
