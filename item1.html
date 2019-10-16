@@ -17,13 +17,11 @@
     		if (this.readyState == 4 && this.status == 200) {
        			var jsontext = this.responseText;
         		var obj1 = JSON.parse(jsontext);
-       			for (item of obj1) {
-					//if(item.title == "Ravioli"){
-						document.getElementById("mytable").innerHTML+="<table><tr><td>"+item.title+"</td></td></tr>";
-						document.getElementById("mytable").innerHTML+="<tr><td>"+item.summary+"</td></td></tr>";
-						document.getElementById("mytable").innerHTML+="<tr><td><img src='"+item.image+"' width='50px'/></td></td></tr>";
-						document.getElementById("mytable").innerHTML+="</table><hr>";
-					//}
+       			for (var i = 0; i < 5; i++) {
+					document.getElementById("mytable").innerHTML+="<table><tr><td>"+item[i].title+"</td></td></tr>";
+					document.getElementById("mytable").innerHTML+="<tr><td>"+item[i].summary+"</td></td></tr>";
+					document.getElementById("mytable").innerHTML+="<tr><td><img src='"+item[i].image+"' width='50px'/></td></td></tr>";
+					document.getElementById("mytable").innerHTML+="</table><hr>";
      			}
    			}
 		};
@@ -34,4 +32,3 @@
 </script>
 <div id="mytable"></div>
 </html>
-Pastas
