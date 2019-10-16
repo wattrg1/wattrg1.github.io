@@ -18,9 +18,9 @@
        			var jsontext = this.responseText;
         		var obj1 = JSON.parse(jsontext);
        			for (var i = 5; i < 10; i++) {
-					document.getElementById("mytable").innerHTML+="<table><tr><td>"+item[i].title+"</td></td></tr>";
-					document.getElementById("mytable").innerHTML+="<tr><td>"+item[i].summary+"</td></td></tr>";
-					document.getElementById("mytable").innerHTML+="<tr><td><img src='"+item[i].image+"' width='50px'/></td></td></tr>";
+					document.getElementById("mytable").innerHTML+="<table><tr><td>"+obj1[i].title+"</td></td></tr>";
+					document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].summary+"</td></td></tr>";
+					document.getElementById("mytable").innerHTML+="<tr><td><img src='"+obj1[i].image+"' width='50px'/></td></td></tr>";
 					document.getElementById("mytable").innerHTML+="</table><hr>";
      			}
    			}
