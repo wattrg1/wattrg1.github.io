@@ -15,11 +15,11 @@
         			document.getElementById("mytable").innerHTML+="<table><thead><tr><th>Product</th><th>Description</th><th>Image</th><th>Price</th></tr></thead><tbody>";
 				
        			for (var i = 0; i < 5; i++) {
-					document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].title+"</td></td></tr>";
-					document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].summary+"</td></td></tr>";
-					document.getElementById("mytable").innerHTML+="<tr><td><img src='"+obj1[i].image+"' width='50px'/></td></tr>";
-				document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].price+"</td></tr>";
-					document.getElementById("mytable").innerHTML+="<tr><td colspan='4'><hr></td></tr>";
+					document.getElementById("mytable").innerHTML+="<tr><td>"+obj1[i].title+"</td>";
+					document.getElementById("mytable").innerHTML+="<td>"+obj1[i].summary+"</td>";
+					document.getElementById("mytable").innerHTML+="<td><img src='"+obj1[i].image+"' width='50px'/></td>";
+				document.getElementById("mytable").innerHTML+="<td>"+obj1[i].price+"</td>";
+					document.getElementById("mytable").innerHTML+="<td colspan='4'><hr></td></tr>";
      			}
      				document.getElementById("mytable").innerHTML+="</tbody></table>";
 				
