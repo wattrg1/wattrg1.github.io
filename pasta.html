@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 		<title>Pasta</title>
@@ -73,14 +74,14 @@
 			<tbody></tbody>
 		</table>
 	</div>
-	<table width="100%">
-		<tr><td id="comments" colspan="2"></td></tr>
-   		<tr><td style='text-align: right;vertical-align: top'>Add Comment</td><td style='padding-left: 20px;text-align: left'>
-   			<textarea id="comment"style="height:50px; max-width: 300px"></textarea></td></tr>
-  		<tr><td  style='text-align: right; vertical-align: top'>Your Name</td><td style='padding-left: 20px;text-align: left'>
-  			<input type="text" id="	name"/></td></tr>
-        <tr><td ></td><td style='padding-left: 20px;text-align: left'>
-        <button id="submitcomment" type="button" onClick="addComment();">Submit Comment</button></td></tr>
-    </table>
+	<div id="commentTablediv">
+		<table>
+			<tr><td id="comments" colspan="2"></td></tr>
+	   		<tr><td>Add Comment</td><textarea id="comment"></textarea></td></tr>
+	  		<tr><td>Your Name</td><td><input type="text" id="name"/></td></tr>
+	        <tr><td ></td><td>
+	        <button id="submitcomment" type="button" onClick="addComment();">Submit Comment</button></td></tr>
+	    </table>
+	</div>
 </body>
 </html>
