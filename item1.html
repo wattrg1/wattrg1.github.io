@@ -14,7 +14,7 @@
         		var obj1 = JSON.parse(jsontext);
         			var table = document.getElementById("mytable");
        			for (var i = 0; i < 5; i++) {
-       				var row = table.insertRow(i);
+       				var row = table.insertRow(i+1);
        				var cell1 = row.insertCell(0);
        				cell1.style.verticalAlign="top";
        				cell1.innerHTML =obj1[i].title;
