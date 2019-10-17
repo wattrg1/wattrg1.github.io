@@ -8,13 +8,13 @@
 	 <script type="text/javascript">
   function addComment(){
     console.log(document.getElementById("comment").value);
-     ar date1 = new Date().toLocaleString();
+     var date1 = new Date().toLocaleString();
      document.getElementById("comments").innerHTML += date1 + " - " + document.getElementById("name").value + " - " + document.getElementById("comment").value + "<br/>";
      document.getElementById("comment").value="";
     document.getElementById("name").value="";
        }   
 
-	 	
+
 function rate(row,sd){
     //"★"
     if (sd == 1)  document.getElementById("rating"+row).innerHTML="★";
