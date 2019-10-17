@@ -86,10 +86,7 @@ ul li a:hover + .hidden, .hidden:hover {
   max-width: 300px;
 }
 
-#mainheader img{
-  float: left;
-}
-
-#mainheader h1{
-  position: relative;
-}
+/*var cell1{
+  vertical-align: top;
+  min-width: 15%;
+}*/

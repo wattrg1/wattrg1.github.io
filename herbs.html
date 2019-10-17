@@ -16,7 +16,7 @@
 		else{
 			var date1 = new Date().toLocaleString();
      		document.getElementById("comments").innerHTML += date1 + " - " + document.getElementById("name").value + " - " + document.getElementById("comment").value + "<br/>";
-     		document.getElementById("comment").value =" ";
+     		document.getElementById("comment").value ="";
     		document.getElementById("name").value = "";
 		}
     }   
@@ -39,8 +39,8 @@
        				var row = table.insertRow(i - 4);
        				
        				var cell1 = row.insertCell(0);
-       				cell1.style.verticalAlign = "top";
-       				cell1.style.minWidth = "15%";
+       				//cell1.style.verticalAlign = "top";
+       				//cell1.style.minWidth = "15%";
        				cell1.innerHTML = obj1[i].title + "<br/><span id='rating"+i+"'><a href='javascript:rate("+i+",1);''>☆</a> <a href='javascript:rate("+i+",2);''>☆</a> <a href='javascript:rate("+i+",3);''>☆</a> <a href='javascript:rate("+i+",4);''>☆</a> <a href='javascript:rate("+i+",5);'>☆</a></span>";
 					
  					var cell2 = row.insertCell(1);
