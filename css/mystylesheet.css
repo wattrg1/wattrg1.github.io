@@ -91,3 +91,13 @@ ul li a:hover + .hidden, .hidden:hover {
   padding-right: 10%;  
   margin-top: 60px;
 }
+
+#header{
+	width: 100%;
+}
+#pastaHead{
+	width: 160px;
+}
+#herbsHead{
+	width: 160px;
+}
