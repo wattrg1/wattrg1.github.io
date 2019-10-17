@@ -30,6 +30,10 @@ li {
   float: none;
 }
 
+#commentsTable{
+	width: 100%;
+}
+
 li a {
   display: block;
   min-width: 100px;
