@@ -7,14 +7,17 @@
 	<link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
 	<script type="text/javascript">
 	function addComment(){
-		if(document.getElementById("name").value != ""){
-     		var date1 = new Date().toLocaleString();
+		if(document.getElementById("name").value == ""){
+     		alert("Please enter your name");
+		}
+		else if(document.getElementById("comments").value == ""){
+			alert("Please enter a comment");
+		}
+		else{
+			var date1 = new Date().toLocaleString();
      		document.getElementById("comments").innerHTML += date1 + " - " + document.getElementById("name").value + " - " + document.getElementById("comment").value + "<br/>";
      		document.getElementById("comment").value =" ";
     		document.getElementById("name").value = "";
-		}
-		else{
-			alert("Please enter your name");
 		}
     }   
 	function rate(row,sd){
