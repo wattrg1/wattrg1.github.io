@@ -69,4 +69,23 @@ li ul li a {
 ul li a:hover + .hidden, .hidden:hover {
   display: block; 
 }
-    
+ 
+#commentTablediv {
+  width = 100%;
+}   
+
+#comments {
+  text-align: right;
+  vertical-align: top;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#comment{
+  height:50px; 
+  max-width: 300px;
+}
+
+#mainheader{
+  align-items: center;
+}
