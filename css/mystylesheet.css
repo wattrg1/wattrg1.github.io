@@ -86,6 +86,10 @@ ul li a:hover + .hidden, .hidden:hover {
   max-width: 300px;
 }
 
-#mainheader{
-  align-items: center;
+#mainheader img{
+  float: left;
+}
+
+#mainheader h1{
+  position: relative;
 }
