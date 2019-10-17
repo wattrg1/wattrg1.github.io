@@ -92,12 +92,10 @@ ul li a:hover + .hidden, .hidden:hover {
   margin-top: 60px;
 }
 
-#header{
-	width: 100%;
+h1{
+	text-align: center;
 }
-#pastaHead{
-	width: 160px;
-}
-#herbsHead{
-	width: 160px;
+h3{
+	margin-top: 110px;
+	text-align: center;
 }
