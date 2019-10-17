@@ -7,11 +7,17 @@
 	 <link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
 	 <script type="text/javascript">
   function addComment(){
-    console.log(document.getElementById("comment").value);
+    //console.log(document.getElementById("comment").value);
+if(document.getElementById("name").value!=""){
+
+
      var date1 = new Date().toLocaleString();
      document.getElementById("comments").innerHTML += date1 + " - " + document.getElementById("name").value + " - " + document.getElementById("comment").value + "<br/>";
      document.getElementById("comment").value="";
     document.getElementById("name").value="";
+}else{
+	alert("Please enter your name");
+}
        }   
 
 
