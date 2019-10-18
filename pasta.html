@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<title>Pasta</title>
+		<title>Herbs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">    
 	<link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
-	<script type="text/javascript">
+	<script>
 	function addComment(){
-		if(document.getElementById("name").value != ""){
-     		var date1 = new Date().toLocaleString();
-     		document.getElementById("comments").innerHTML += date1 + " - " + document.getElementById("name").value + " - " + document.getElementById("comment").value + "<br/>";
-     		document.getElementById("comment").value =" ";
-    		document.getElementById("name").value = "";
+		if(document.getElementById("name").value == ""){
+     		alert("Please enter your name");
+		}
+		else if(document.getElementById("comment").value == ""){
+			alert("Please enter a comment");
 		}
 		else{
-			alert("Please enter your name");
+			var date1 = new Date().toLocaleString();
+     		document.getElementById("comments").innerHTML += date1 + " - " + document.getElementById("name").value + " - " + document.getElementById("comment").value + "<br/>";
+     		document.getElementById("comment").value ="";
+    		document.getElementById("name").value = "";
 		}
     }   
 	function rate(row,sd){
@@ -60,7 +63,7 @@
 	</script>
 </head>
 <body>
-	<h1>The Pasta and Herbs Shop</h1>
+	<h1>Pasta</h1>
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="pasta.html">Pasta</a></li>
@@ -68,21 +71,20 @@
 		<li><a href="contact.html">Contact</a></li>
 	</ul>
 	<br/>
-	<div style="padding-left:10%;padding-right:10%"><br/><br/><br/><br/>
 	<div id="mytablediv">
+	<div id="mytablediv2">
 		<table id="mytable">
 			<thead><tr><th>Product</th><th>Description</th><th>Image</th><th>Price</th></tr></thead>
 			<tbody></tbody>
 		</table>
 	</div>
-	<div id="commentTablediv">
-		<table>
-			<tr><td id="comments" colspan="2"></td></tr>
-	   		<tr><td>Add Comment</td><textarea id="comment"></textarea></td></tr>
-	  		<tr><td>Your Name</td><td><input type="text" id="name"/></td></tr>
-	        <tr><td ></td><td>
-	        <button id="submitcomment" type="button" onClick="addComment();">Submit Comment</button></td></tr>
-	    </table>
-	</div>
+	<table id="commentsTable">
+       	<tr><td id="comments" colspan="2"></td></tr>
+       	<tr><td class="col1">Add Comment</td><td class="col2"><textarea id="comment" ></textarea></td></tr>
+		
+      	<tr><td class="col1">Your Name</td><td class="col2" >
+      		<input type="text" id="name"/></td></tr>
+        	<tr><td ></td><td class="col2"><button id="submitcomment" type="button" onClick="addComment();">Submit Comment</button></td></tr>
+    </table></div>
 </body>
 </html>

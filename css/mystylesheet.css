@@ -23,6 +23,11 @@ ul {
   text-align: center;
 }
 
+#contactTable{
+	margin: auto;
+	padding-top: 120px;
+}
+
 li {
   display: inline-block;
   margin-right: 1px;
