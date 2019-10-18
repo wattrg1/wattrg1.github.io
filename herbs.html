@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-		<title>Herbs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-	<link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
-	<script>
+<meta charset="UTF-8">
+<title>Herbs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
+<script>
 	function addComment(){
 		if(document.getElementById("name").value == ""){
      		alert("Please enter your name");
@@ -36,24 +36,30 @@
         		var obj1 = JSON.parse(jsontext);
         		var table = document.getElementById("mytable");
        			for (var i = 5; i < 10; i++) {
-       				var row = table.insertRow(i - 4);
-       				
+       				var row = table.insertRow();
+       				var current =i-4;
        				var cell1 = row.insertCell(0);
        				cell1.style.verticalAlign = "top";
        				cell1.style.minWidth = "15%";
-       				cell1.innerHTML = obj1[i].title + "<br/><span id='rating"+i+"'><a href='javascript:rate("+i+",1);''>☆</a> <a href='javascript:rate("+i+",2);''>☆</a> <a href='javascript:rate("+i+",3);''>☆</a> <a href='javascript:rate("+i+",4);''>☆</a> <a href='javascript:rate("+i+",5);'>☆</a></span>";
+       				cell1.innerHTML = "<strong>"+obj1[i].title + "</strong><br/><span id='rating"+i+"'><a href='javascript:rate("+i+",1);''>☆</a> <a href='javascript:rate("+i+",2);''>☆</a> <a href='javascript:rate("+i+",3);''>☆</a> <a href='javascript:rate("+i+",4);''>☆</a> <a href='javascript:rate("+i+",5);'>☆</a></span>";
 					
- 					var cell2 = row.insertCell(1);
- 					cell2.style.verticalAlign = "top";
-       				cell2.innerHTML = obj1[i].summary;
-					
-					var cell3 = row.insertCell(2);
+					var cell3 = row.insertCell(1);
 					cell3.style.verticalAlign = "top";
-       				cell3.innerHTML = "<img src='" + obj1[i].image + "' width='100px'/>";
+       				cell3.style.textAlign = "center";
+       		
+       				cell3.innerHTML = "<img src='" + obj1[i].image + "' width='150px'/>";
 					
-					var cell4 = row.insertCell(3);
+					var cell4 = row.insertCell(2);
 					cell4.style.verticalAlign = "top";
+					cell4.style.textAlign = "center";
        				cell4.innerHTML = obj1[i].price;
+					
+					var row2 = table.insertRow();
+					
+					var row2cell1 = row2.insertCell(0);
+					row2cell1.colSpan=3;
+       				row2cell1.innerHTML = obj1[i].summary+"<hr>";
+       				
      			}
   			}
 		};
@@ -63,28 +69,45 @@
 	</script>
 </head>
 <body>
-	<h1>Herbs</h1>
-	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="pasta.html">Pasta</a></li>
-		<li><a href="herbs.html">Herbs</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-	<br/>
-	<div id="mytablediv">
-	<div id="mytablediv2">
-		<table id="mytable">
-			<thead><tr><th>Product</th><th>Description</th><th>Image</th><th>Price</th></tr></thead>
-			<tbody></tbody>
-		</table>
-	</div>
-	<table id="commentsTable">
-       	<tr><td id="comments" colspan="2"></td></tr>
-       	<tr><td class="col1">Add Comment</td><td class="col2"><textarea id="comment" ></textarea></td></tr>
-		
-      	<tr><td class="col1">Your Name</td><td class="col2" >
-      		<input type="text" id="name"/></td></tr>
-        	<tr><td ></td><td class="col2"><button id="submitcomment" type="button" onClick="addComment();">Submit Comment</button></td></tr>
-    </table></div>
+<h1>Herbs</h1>
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="pasta.html">Pasta</a></li>
+  <li><a href="herbs.html">Herbs</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<br/>
+<div id="mytablediv">
+  <div id="mytablediv2">
+    <table id="mytable">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Image</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <table id="commentsTable">
+    <tr>
+      <td id="comments" colspan="2"></td>
+    </tr>
+    <tr>
+      <td class="col1">Add Comment</td>
+      <td class="col2"><textarea id="comment" ></textarea></td>
+    </tr>
+    <tr>
+      <td class="col1">Your Name</td>
+      <td class="col2" ><input type="text" id="name"/></td>
+    </tr>
+    <tr>
+      <td ></td>
+      <td class="col2"><button id="submitcomment" type="button" onClick="addComment();">Submit Comment</button></td>
+    </tr>
+  </table>
+</div>
 </body>
 </html>

@@ -1,50 +1,47 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
-}  
-#centerdiv{
-	align-content: center;
 }
-
-#thanks{
-text-align: center;
+#centerdiv {
+  align-content: center;
 }
-.col1{
-	text-align: right;vertical-align: top;
+#thanks {
+  text-align: center;
 }
-.col2{
-padding-left: 20px;text-align: left;
-
+.col1 {
+  text-align: right;
+  vertical-align: top;
 }
-textarea{
-	height:50px; max-width: 300px;
+.col2 {
+  padding-left: 20px;
+  text-align: left;
+}
+textarea {
+  height: 50px;
+  max-width: 300px;
 }
 ul {
-  list-style-type: none; 
-  margin: 0; 
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  position:absolute;
+  position: absolute;
   z-index: 999;
   width: 100%;
   display: table;
   text-align: center;
 }
-
-#contactTable{
-	margin: auto;
-	padding-top: 120px;
+#contactTable {
+  margin: auto;
+  padding-top: 120px;
 }
-
 li {
   display: inline-block;
   margin-right: 1px;
   width: 20%;
   float: none;
 }
-
-#commentsTable{
-	width: 100%;
+#commentsTable {
+  width: 100%;
 }
-
 li a {
   display: block;
   min-width: 100px;
@@ -53,74 +50,54 @@ li a {
   line-height: 50px;
   color: #fff;
   background: #2f3036;
-  text-decoration: none; 
-  }
-
-
+  text-decoration: none;
+}
 li:hover a {
   background: #19c589;
 }
-
 li:hover ul a {
   background: #f3f3f3;
   color: #2f3036;
   height: 40px;
   line-height: 40px;
 }
-
-
 li:hover ul a:hover {
   background: #19c589;
   color: #fff;
 }
-
 li ul {
   display: none;
 }
-
-
-
 li ul li {
-  display: block; 
-  float: none; 
+  display: block;
+  float: none;
 }
-
 li ul li a {
-  width: auto; 
-  min-width: 100px; 
-  padding: 0 20px; 
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
 }
-
 ul li a:hover + .hidden, .hidden:hover {
-  display: block; 
+  display: block;
 }
- 
-#commentTablediv {
-  width = 100%;
-}   
-
 #comments {
-  text-align: right;
   vertical-align: top;
   padding-left: 20px;
   text-align: left;
 }
-
-#comment{
-  height:50px; 
+#comment {
+  height: 50px;
   max-width: 300px;
 }
-
-#mytablediv{
+#mytablediv {
   padding-left: 10%;
-  padding-right: 10%;  
+  padding-right: 10%;
   margin-top: 60px;
 }
-
-h1{
-	text-align: center;
+h1 {
+  text-align: center;
 }
-h3{
-	margin-top: 110px;
-	text-align: center;
+h3 {
+  margin-top: 110px;
+  text-align: center;
 }
