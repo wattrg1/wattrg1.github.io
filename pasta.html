@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Pasta</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/css/mystylesheet.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/mystylesheet.css">
 <script>
 	function addComment(){
 		if(document.getElementById("name").value == ""){
@@ -63,7 +63,7 @@
      			}
   			}
 		};
-		xhttp.open("GET", "items.json", true);
+		xhttp.open("GET", "/assets/js/items.json", true);
 		xhttp.send();
     }   
 	</script>
