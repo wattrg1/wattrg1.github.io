@@ -4,6 +4,10 @@ body{
 #centerdiv{
 	align-content: center;
 }
+
+#thanks{
+text-align: center;
+}
 .col1{
 	text-align: right;vertical-align: top;
 }
