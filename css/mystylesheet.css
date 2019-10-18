@@ -1,7 +1,9 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
 }  
-    
+#centerdiv{
+	align-content: center;
+}
 .col1{
 	text-align: right;vertical-align: top;
 }
