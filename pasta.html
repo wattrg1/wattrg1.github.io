@@ -43,9 +43,9 @@
        				cell1.style.minWidth = "15%";
        				cell1.innerHTML = obj1[i].title + "<br/><span id='rating"+i+"'><a href='javascript:rate("+i+",1);''>☆</a> <a href='javascript:rate("+i+",2);''>☆</a> <a href='javascript:rate("+i+",3);''>☆</a> <a href='javascript:rate("+i+",4);''>☆</a> <a href='javascript:rate("+i+",5);'>☆</a></span>";
 					
- 					var cell2 = row.insertCell(1);
- 					cell2.style.verticalAlign = "top";
-       				cell2.innerHTML = obj1[i].summary;
+ 					//var cell2 = row.insertCell(1);
+ 					//cell2.style.verticalAlign = "top";
+       				//cell2.innerHTML = obj1[i].summary;
 					
 					var cell3 = row.insertCell(2);
 					cell3.style.verticalAlign = "top";
@@ -54,6 +54,15 @@
 					var cell4 = row.insertCell(3);
 					cell4.style.verticalAlign = "top";
        				cell4.innerHTML = obj1[i].price;
+					
+					var row2 = table.insertRow(i + 2);
+					//row2.colSpan=3
+					
+					var row2cell1 = row2.insertCell(0);
+					//row2cell1.style.verticalAlign = "top";
+					row2cell1.colSpan=3;
+       				row2cell1.innerHTML = obj1[i].summary;
+       				
      			}
   			}
 		};
