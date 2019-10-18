@@ -42,7 +42,7 @@
        				var cell1 = row.insertCell(0);
        				cell1.style.verticalAlign = "top";
        				cell1.style.minWidth = "15%";
-       				cell1.innerHTML = obj1[i].title + "<br/><span id='rating"+i+"'><a href='javascript:rate("+i+",1);''>☆</a> <a href='javascript:rate("+i+",2);''>☆</a> <a href='javascript:rate("+i+",3);''>☆</a> <a href='javascript:rate("+i+",4);''>☆</a> <a href='javascript:rate("+i+",5);'>☆</a></span>";
+       				cell1.innerHTML = "<strong>"+obj1[i].title + "</strong><br/><span id='rating"+i+"'><a href='javascript:rate("+i+",1);''>☆</a> <a href='javascript:rate("+i+",2);''>☆</a> <a href='javascript:rate("+i+",3);''>☆</a> <a href='javascript:rate("+i+",4);''>☆</a> <a href='javascript:rate("+i+",5);'>☆</a></span>";
 					
  					//var cell2 = row.insertCell(1);
  					//cell2.style.verticalAlign = "top";
@@ -50,10 +50,12 @@
 					
 					var cell3 = row.insertCell(1);
 					cell3.style.verticalAlign = "top";
+       				cell3.style.textAlign = "center";
        				cell3.innerHTML = "<img src='" + obj1[i].image + "' width='100px'/>";
 					
 					var cell4 = row.insertCell(2);
 					cell4.style.verticalAlign = "top";
+					cell4.style.textAlign = "center";
        				cell4.innerHTML = obj1[i].price;
 					
 					
