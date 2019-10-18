@@ -37,7 +37,7 @@
         		var table = document.getElementById("mytable");
        			for (var i = 0; i < 5; i++) {
        				var row = table.insertRow(i + 1);
-       				
+       				var current =i+1;
        				var cell1 = row.insertCell(0);
        				cell1.style.verticalAlign = "top";
        				cell1.style.minWidth = "15%";
@@ -55,7 +55,7 @@
 					cell4.style.verticalAlign = "top";
        				cell4.innerHTML = obj1[i].price;
 					
-					var row2 = table.insertRow(i + 2);
+					var row2 = table.insertRow(current+1);
 					//row2.colSpan=3
 					
 					var row2cell1 = row2.insertCell(0);
